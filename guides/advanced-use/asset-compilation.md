@@ -12,6 +12,8 @@ For example, if you place `logo.png` in `public/assets/images`, you can referenc
 templates with `assets/images/logo.png` or in stylesheets with
 `url('/assets/images/logo.png')`.
 
+The above assumes that you haven't adjusted your rootURL, and won't work if you have.
+
 In production builds, these assets are [fingerprinted](#fingerprintingandcdnurls), but
 all references are also automatically updated. This functionality comes from
 [broccoli-asset-rev](https://github.com/rickharrison/broccoli-asset-rev). Be sure to check out
